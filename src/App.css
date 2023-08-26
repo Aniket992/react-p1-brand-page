@@ -1,38 +1,204 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  
+  height: 72px;
+  max-width:100%;
+} */
+.navbar {
+  width: 1280px; /* Adjust this value as needed */
+  padding: 10px; /* Add padding around the content */
+  margin-bottom: 20px; /* Add margin to separate the navbar from other content */
+  background-color: #ffffff; /* Example background color */
+  color: rgb(0, 0, 0); /* Example text color */
+  display: flex; /* Set display to flex to control alignment of items */
+  justify-content: space-between; /* Align items to the start and end */
+  align-items: center; /* Center items vertically */
+  /* padding: 20px; */
+  /* margin: 20px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 24px;
+
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: large;
+}
+ button{
+   all:unset;
+/*
+color: white;
+background: var(--red);
+font-weight:500 ;
+height: 32px;
+padding: 6px 16px; */
+width: Hug (75px);
+height: Hug (31px);
+top: 21px;
+left: 1286px;
+padding: 6px 16px 6px 16px;
+gap: 10px;
+background-color: #D01C28;
+;
+ }
+
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+  margin: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display:none;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background-color: #b33c3c;
+    top: 60px;
+    left: 0;
+    text-align: center;
+    transition: all 0.5s ease-in;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /* align-items: center;*/
+  /* text-align: center; */
+}
+.textmaterial{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  /* gap: 36px; */
+  width:  650px;
+height: 613px;
+gap: 20px;
 
-.App-link {
-  color: #61dafb;
 }
+h1{
+  font-family: Poppins;
+font-size: 108px;
+font-weight: 800;
+line-height: 102px;
+letter-spacing: 0em;
+text-align: left;
+margin: 0px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+p{
+  font-family: Poppins;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #5A5959;
+width: 439px;
+height: 91px;
+
+}
+.buttons{
+  display: flex;
+
+  font-family: Inter;
+font-size: 24px;
+font-weight: 600;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+
+  
+width: Hug 141px;
+height: Hug 41px;
+padding: 6px 16px 6px 16px;
+border: 1px;
+gap: 30px;
+
+}
+#category{
+  width: Hug 141px;
+height: Hug 41px;
+padding: 6px 16px 6px 16px;
+border: 1px;
+gap: 10px;
+
+font-family: Inter;
+font-size: 24px;
+font-weight: 600;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+
+  background-color: transparent;
+  border: 1px solid grey;
+}
+#availability{
+  font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+width: 131px;
+height: 19px;
+
+}
+.brandimages{
+display: flex;
+ width: 32px;
+ height: 32px;
+gap: 16px;
+
+}
+.imagesection{
+  width: 530px;
+height: 487.061767578125px;
+
 }
